@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="base.definition"
+            template="/WEB-INF/tiles/layouts/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="head" value="/WEB-INF/jsp/head.jsp"/>
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+    <!-- STUDENT -->
+    <definition name="students" extends="base.definition">
+        <put-attribute name="title" value="Students List"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/students.jsp"/>
+    </definition>
+
+    <definition name="addStudent" extends="base.definition">
+        <put-attribute name="title" value="Add new student"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/addStudent.jsp"/>
+    </definition>
+    <definition name="editStudent" extends="base.definition">
+        <put-attribute name="title" value="Edit student"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/editStudent.jsp"/>
+    </definition>
+
+    <definition name="student" extends="base.definition">
+        <put-attribute name="title" value="Student info"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/student.jsp"/>
+    </definition>
+
+
+    <!-- SUBJECT -->
+    <definition name="addSubject" extends="base.definition">
+        <put-attribute name="title" value="Add subject"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/addSubject.jsp"/>
+    </definition>
+
+    <definition name="subjects" extends="base.definition">
+        <put-attribute name="title" value="Subject List"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/subjects.jsp"/>
+    </definition>
+
+    <definition name="subject" extends="base.definition">
+        <put-attribute name="title" value="Subject Info"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/subject.jsp"/>
+    </definition>
+
+    <definition name="editSubject" extends="base.definition">
+        <put-attribute name="title" value="Edit subject"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/editSubject.jsp"/>
+    </definition>
+
+    <!---->
+    <definition name="studentSetter" extends="base.definition">
+        <put-attribute name="title" value="Add students to subject"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/studentSetter.jsp"/>
+    </definition>
+
+    <definition name="loginPage" extends="base.definition">
+        <put-attribute name="title" value="Login page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/loginPage.jsp"/>
+    </definition>
+
+</tiles-definitions>
+
+

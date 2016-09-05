@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #2F3E47;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+}
+
+.hrefLink {
+    display: block;
+    color: #85ADC5;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu {
+    display: block;
+    color: #85ADC5;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.active{
+    color: green;
+}
+
+
+
+.hrefLink:hover:is(.active) {
+    color: red;
+}
+
+
+.custom-navbar {
+    background-color: #2196F3;
+    color:white;
+}
+
+.custom-navbar:hover {
+    color: green;
+}
