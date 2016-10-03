@@ -47,7 +47,7 @@ public class AddNewStudentController {
 
         studentValidator.validate(studentForm, bindingResult);
         if (bindingResult.hasErrors()){
-            return STUENT_ADD_FORM;
+            return STUDENT_ADD_FORM;
         }
 
         DateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
